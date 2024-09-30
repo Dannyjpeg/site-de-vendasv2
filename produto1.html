@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Camisa Azul e Branca</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration: none; color: black;">Minha Loja</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="back-button">
+            <a href="index.html" title="Voltar">
+                <img src="seta.png" alt="Voltar" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+        
+        <div class="product">
+            <div class="image-gallery">
+                <img id="mainImage" src="camisa azul.png" alt="Camisa Azul">
+                <div class="thumbnails">
+                    <img src="camisa azul.png" alt="Camisa Azul" onclick="changeImage('camisa azul.png')">
+                    <img src="camisa branca.png" alt="Camisa Branca" onclick="changeImage('camisa branca.png')">
+                </div>
+            </div>
+            <div class="details">
+                <h2>Camisa Azul</h2>
+                <p>Ideal para qualquer ocasião, feita com material leve e confortável.</p>
+                <p class="price">R$ 49,99</p>
+                <div class="options">
+                    <label for="size">Tamanho:</label>
+                    <select id="size">
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                    </select>
+                    <label for="color" style="margin-left: 10px;">Cor:</label>
+                    <select id="color" onchange="changeColor()">
+                        <option value="azul">Azul</option>
+                        <option value="branco">Branco</option>
+                    </select>
+                </div>
+                <button>add ao carrinho</button>
+            </div>
+        </div>
+
+        <div class="comments">
+            <h3>Comentários dos Usuários</h3>
+            <div class="comment">
+                <img src="usuario1.jpg" alt="Usuário 1">
+                <p>Ótima qualidade! - Usuário 1</p>
+            </div>
+            <div class="comment">
+                <img src="usuario2.jpg" alt="Usuário 2">
+                <p>Super confortável! - Usuário 2</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
